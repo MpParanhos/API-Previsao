@@ -1,5 +1,61 @@
 #imgTempo{
     width: 32px;
-    height: 32px;
+    height: 32px;    
+}
+
+body{
+    background-color: rgba(0, 183, 255, 0.4);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "a a b"
+        "c c b"
+        "c c b";  
+}
+
+#container{
+    grid-area: a;
+    border-radius: 8px;
+    background-color: rgba(0, 140, 255, 0.849);
+    padding: 4px;
+    width: auto;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 5px 10px rgba(0, 20, 204, 0.521);
+}
+
+#title{
+    width: 100%;
+}
+
+#content{
+    font-size: 20px;
+}
+
+#btnConsultar{
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
     
+}
+
+#imageArea{
+    display: grid;
+    grid-area: b;
+    margin-left: 10px;
+    height: 100%;
+}
+#imageArea img{
+    border-radius: 8px;
+    margin: 0px;
+    border: 2px solid rgba(0, 140, 255, 0.849);  
+}
+
+#weatherArea{
+    grid-area: c;
+    margin-top: 15px;
 }

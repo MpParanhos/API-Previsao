@@ -7,8 +7,39 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Previsão do Tempo</title>
 </head>
-<body>
-    
+<body>    
+    <div id="container">
+        <div id="title">
+            <h1>Consulta de Previsão do Tempo</h1>
+        </div>
+        <div id="content">
+            <label> <b>Selecione uma cidade:</b> </label>
+            <select id="selCidade">
+                <option value="Angra dos Reis">Angra dos Reis</option>
+                <option value="Barra Mansa">Barra Mansa</option>
+                <option value="Cabo Frio">Cabo Frio</option>
+                <option value="Itatiaia">Itatiaia</option>
+                <option value="Macaé">Macaé</option>
+                <option value="Niterói">Niterói</option>
+                <option value="Petrópolis">Petrópolis</option>
+                <option value="Resende">Resende</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Volta Redonda">Volta Redonda</option>  
+            </select>
+        </div>
+        <div id="buttonSearch">
+            <button id="btnConsultar"> <b>Consultar Previsão do Tempo</b> </button>
+        </div>
+    </div>
+    <div id="weatherArea">
+        <img id="imgTempo">
+        <p id="pTemp"></p>
+    </div>
+    <div id="imageArea">
+        <img src="./assets/unnamed.jpg">
+    </div>
+   
+
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <script type="module" src="./js/script.js"></script>
 </body>
