@@ -8,13 +8,14 @@
 body{
     background-color: rgba(0, 183, 255, 0.4);
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-        "a a b"
-        "c c b"
-        "c c b";  
+        "a a a b"
+        "c c c b"
+        "c c c b"
+        "c c c b";  
 }
 
 #container{
@@ -49,12 +50,12 @@ body{
     display: grid;
     grid-area: b;
     margin-left: 10px;
-    height: 100%;
 }
 #imageArea img{
     border-radius: 8px;
     margin: 0px;
-    border: 2px solid rgba(0, 140, 255, 0.849);  
+    border: 2px solid rgba(0, 140, 255, 0.849);
+    height: 600px;  
 }
 
 .weatherArea{
